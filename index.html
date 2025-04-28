@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>МАОУ "Гимназия №1" | Добро пожаловать</title>
+    <style>
+        /* Общий стиль */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #90ee90, #d4f9d4); /* Весенний градиент */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Шапка */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            color: #4CAF50;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header span {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Основной контент */
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        /* Новости */
+        .news {
+            margin-top: 10px;
+        }
+
+        .news h3 {
+            font-size: 1.4em;
+            color: #333;
+        }
+
+        .news p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Анимации */
+        .emoji {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .emoji span {
+            display: inline-block;
+            margin: 0 5px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 0.9em;
+            color: #4CAF50;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🌸 Добро пожаловать на сайт <span>МАОУ "Гимназия №1"</span> 🌼
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>О нашей гимназии</h2>
+            <ul>
+                <li><strong>Директор:</strong> Максим Андреевич Власов</li>
+                <li><strong>Заместитель директора:</strong> Александр Сергеевич Гербер</li>
+                <li><strong>Дата основания:</strong> 12 июня 2024 года</li>
+                <li><strong>Система электронного журнала:</strong> "Инновационная школа"</li>
+                <li><strong>Особенности:</strong> Современное образование, инновационный подход и дружная атмосфера!</li>
+            </ul>
+            <div class="emoji">
+                <span>🌷</span><span>🌞</span><span>🌳</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Новости гимназии</h2>
+            <div class="news">
+                <h3>Новое украшение школы</h3>
+                <p>Недавно нашу гимназию украсили тематическими стендами и современными арт-инсталляциями.</p>
+            </div>
+            <div class="news">
+                <h3>Анимация и праздники</h3>
+                <p>В гимназии запланированы увлекательные мероприятия к годовщине!</p>
+            </div>
+            <div class="emoji">
+                <span>🎉</span><span>🌟</span><span>✨</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 МАОУ "Гимназия №1". Все права защищены. 🌸</p>
+    </footer>
+</body>
+</html>
